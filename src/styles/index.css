@@ -1,0 +1,73 @@
+:root {
+    --font-family: 'Inter', Arial, Helvetica, sans-serif;
+
+    --color-background: #f8f9ff;
+    --color-surface: #ffffff;
+    --color-surface-container: #eff4ff;
+    --color-surface-container-low: #f0f3ff;
+    --color-surface-container-highest: #d3e4fe;
+    --color-surface-hover: #dce9ff;
+    --color-primary: #3525cd;
+    --color-primary-fixed: #e2dfff;
+    --color-primary-fixed-strong: #0f0069;
+    --color-primary-soft: rgba(53, 37, 205, 0.1);
+    --color-primary-shadow: rgba(53, 37, 205, 0.18);
+    --color-secondary: #00687a;
+    --color-secondary-soft: rgba(86, 223, 255, 0.15);
+    --color-text-primary: #0b1c30;
+    --color-text-secondary: #464555;
+    --color-text-tertiary: #777587;
+    --color-white: #ffffff;
+    --color-white-soft: rgba(255, 255, 255, 0.8);
+    --color-error: #ba1a1a;
+    --color-error-soft: rgba(186, 26, 26, 0.08);
+    --color-success: #00687a;
+    --color-ring: rgba(53, 37, 205, 0.1);
+
+    --shadow-soft: 0 1px 4px rgba(11, 28, 48, 0.04);
+    --shadow-medium: 0 4px 12px rgba(11, 28, 48, 0.06);
+    --shadow-blur: 0 1px 8px rgba(11, 28, 48, 0.03);
+    --shadow-primary: 0 2px 8px rgba(53, 37, 205, 0.18);
+
+    --radius-xs: 8px;
+    --radius-sm: 10px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-pill: 999px;
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 32px;
+    --space-8: 36px;
+    --space-9: 44px;
+    --space-10: 64px;
+    --space-11: 72px;
+    --space-12: 88px;
+
+    --header-height: 64px;
+    --footer-height: 72px;
+    --content-max-width: 920px;
+    --input-indent: 42px;
+    --icon-size-sm: 18px;
+    --icon-size-md: 20px;
+    --icon-size-lg: 22px;
+    --icon-size-xl: 36px;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--color-background);
+    color: var(--color-text-primary);
+}

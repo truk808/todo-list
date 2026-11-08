@@ -1,0 +1,53 @@
+.form {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.inputWrap {
+    position: relative;
+    flex: 1;
+}
+
+.primaryButton {
+    min-width: 122px;
+    height: 44px;
+    padding: 0 var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--color-primary);
+    color: var(--color-white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    box-shadow: var(--shadow-primary);
+}
+
+.primaryButton span {
+    font-size: var(--icon-size-md);
+}
+
+.input {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    background: var(--color-surface-container);
+    padding: 14px 12px 14px var(--input-indent);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-text-primary);
+    outline: none;
+    transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.input::placeholder {
+    color: var(--color-text-tertiary);
+}
+
+.input:focus {
+    background: var(--color-surface);
+    box-shadow: 0 0 0 3px var(--color-ring);
+}

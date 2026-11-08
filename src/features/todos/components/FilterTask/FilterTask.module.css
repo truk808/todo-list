@@ -1,0 +1,29 @@
+.filterRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--space-3);
+    padding-top: 4px;
+}
+
+.filterTabs {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.filterTab {
+    border-radius: var(--radius-pill);
+    padding: 6px 12px;
+    background: var(--color-surface-container-low);
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.filterTab.active {
+    background: var(--color-primary-fixed);
+    color: var(--color-primary-fixed-strong);
+}
