@@ -9,7 +9,7 @@ export const CreateTask = () => {
     const onAddTask = () => {
         setName("");
         todo.addTask(name)
-        todo.saveInStorage()
+
     }
 
     return (
@@ -27,10 +27,10 @@ export const CreateTask = () => {
 
             <button
                 onClick={() => onAddTask()}
-                type="submit"
+                type="button"
                 className={styles.primaryButton}
             >
-                <span>Добавить</span>
+                Добавить
             </button>
         </form>
     );

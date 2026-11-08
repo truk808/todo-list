@@ -56,12 +56,10 @@ export const useTodo = () => {
     };
 
     const changeTask = (id: string, name: string) => {
-        const trimmedName = name.trim();
-        if (!trimmedName) return;
 
         setTodo((prev) =>
             prev.map((task) =>
-                task.id === id ? { ...task, name: trimmedName } : task
+                task.id === id ? { ...task, name } : task
             )
         );
     };
@@ -108,8 +106,6 @@ export const useTodo = () => {
     };
 
     const changeMicroTask = (taskId: string, microTaskId: string, name: string) => {
-        const trimmedName = name.trim();
-        if (!trimmedName) return;
 
         setTodo((prev) =>
             prev.map((task) =>
@@ -117,7 +113,7 @@ export const useTodo = () => {
                     ? {
                         ...task,
                         microTasks: task.microTasks.map((microTask) =>
-                            microTask.id === microTaskId ? { ...microTask, name: trimmedName } : microTask
+                            microTask.id === microTaskId ? { ...microTask, name } : microTask
                         ),
                     }
                     : task
