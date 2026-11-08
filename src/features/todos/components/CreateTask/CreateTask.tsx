@@ -9,7 +9,6 @@ export const CreateTask = () => {
     const onAddTask = () => {
         setName("");
         todo.addTask(name)
-
     }
 
     return (

@@ -23,19 +23,6 @@ export const FilterTask = () => {
                 }
             </div>
         </div>
-    // <div className={styles.filterRow}>
-    //         <div className={styles.filterTabs}>
-    //             <button type="button" className={`${styles.filterTab} ${styles.active}`}>
-    //                 Все (0)
-    //             </button>
-    //             <button type="button" className={styles.filterTab}>
-    //                 В работе (0)
-    //             </button>
-    //             <button type="button" className={styles.filterTab}>
-    //                 Готово (0)
-    //             </button>
-    //         </div>
-    //     </div>
     );
 };
 
